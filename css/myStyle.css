@@ -1,0 +1,516 @@
+/* CSS Dokuments */
+/* #################################################### */
+/* HTML Standard Tags */
+/* #################################################### */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.edo_h2_balken {
+  margin: 0 auto 10px auto;
+  height: 5px;
+  width: 80px;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  font-size: 40px;
+}
+
+/* Kein Link sollte untersschtrichen sein */
+a {
+  text-decoration: none;
+}
+
+.edo_button {
+  text-transform: uppercase;
+  padding: 10px 30px 10px 30px;
+  display: inline-block;
+  margin: 5px 0 0 0px;
+}
+
+/* #################################################### */
+/* Zusammengefaste Klassen */
+/* #################################################### */
+footer,
+header,
+#edo_startSeite .edo_h2_balken,
+#edo_ueberUns,
+#edo_leistungen,
+#edo_leistungen .edo_leistungen ul li .edo_tag_line .edo_h3_balken {
+  background: rgba(212, 212, 212,0.6);
+}
+
+#edo_kontakt .edo_h2_balken,
+#edo_ueberUns .edo_h2_balken,
+#edo_leistungen .edo_h2_balken {
+  background: #fff;
+}
+
+
+.edo_page {
+  background: #444444;
+}
+
+#edo_kontakt h2,
+#edo_startSeite h2,
+#edo_startSeite p,
+#edo_startSeite .edo_button,
+#edo_kontakt,
+#edo_ueberUns .edo_moto_bg article .edo_moto,
+#edo_leistungen .edo_leistungen ul li .edo_tag_line h3,
+#edo_leistungen .edo_leistungen ul li .edo_tag_line p {
+  color: #fff;
+}
+
+p,
+a,
+header nav ul li a,
+header nav ul li,
+header #edo_kontakt_icon .edo_kontakt_icon {
+  color: rgb(141, 92, 0);
+}
+
+#edo_ueberUns h2,
+#edo_leistungen h2,
+header nav ul li a:hover,
+header #edo_kontakt_icon .edo_kontakt_icon:hover {
+  color: rgb(0, 0, 0);
+}
+
+p,
+header nav ul li .edo_button {
+  font-family: "Hanal+Fill";
+  font-weight: 300px;
+  line-height: 25px;
+}
+
+h2 {
+  font-family: "Hanal+Fill";
+}
+
+header,
+header #edo_kontakt_icon,
+#edo_kontakt_icon .edo_kontakt_icon,
+header ul li a,
+header ul,
+header #edo_logo,
+header #edo_kontakt_icon .edo_kontakt_icon span {
+  transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
+/* #################################################### */
+/* Umfasende Objekte & Klassen */
+/* #################################################### */
+.edo_page {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  float: left;
+}
+
+/* #################################################### */
+/* HEADER */
+/* #################################################### */
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40px;
+}
+
+header #edo_logo {
+  float: left;
+  width: 80px;
+  margin: 9px 0 0 8px;
+}
+
+header #edo_logo img {
+  width: 100%;
+  height: auto;
+}
+
+header #edo_kontakt_icon {
+  float: right;
+  width: 75px;
+  height: 40px;
+}
+
+/* die Iicons rechts */
+/* #################### */
+header #edo_kontakt_icon .edo_kontakt_icon {
+  font-size: 12px;
+  width: 35px;
+  height: 40px;
+  border-left: 1px solid rgb(109, 2, 2);
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+header #edo_kontakt_icon .edo_kontakt_icon span {
+  display: block;
+  margin: 16px 0 0 12px;
+  cursor: pointer;
+}
+
+/* ######################## */
+/* Navigation im Header */
+/* ######################## */
+header nav {
+  float: right;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul {
+  margin: 14px 8px 0 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 10px 0 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  font-size: 11px;
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* ######################## */
+/* ####################### */
+/* AB hier wird der HEDAER vergrösert */
+/* ####################### */
+header:hover {
+  height: 55px;
+}
+
+header:hover>#edo_logo {
+  width: 90px;
+  margin: 15px 0 0 60px;
+}
+
+header:hover>#edo_kontakt_icon {
+  width: 140px;
+  height: 100px;
+}
+
+header:hover>#edo_kontakt_icon .edo_kontakt_icon {
+  width: 60px;
+  height: 60px;
+}
+
+header:hover>#edo_kontakt_icon .edo_kontakt_icon span {
+  margin: 20px 0 0 20px;
+  font-size: 20px;
+}
+
+header:hover>nav ul {
+  margin: 20px 20px 0 0;
+}
+
+header:hover>nav ul li a {
+  font-size: 15px;
+}
+
+/* ####################### */
+/* Startseite */
+/* ####################### */
+#edo_startSeite {
+  background: url(../img/Startseite.JPG);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#edo_startSeite #edo_intro {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+#edo_startSeite #edo_intro h2 {
+  text-align: left;
+  margin: 200px 0 0 0px;
+  font-size: 80px;
+  line-height: 110px;
+}
+
+#edo_startSeite #edo_intro .edo_h2_balken {
+  margin: 0 0 20px 0px;
+}
+
+#edo_startSeite #edo_intro p {
+  margin: 0 0 20px 0px;
+  max-width: 300px;
+}
+
+#edo_startSeite #edo_intro .edo_button {
+  border: 2px solid rgb(192, 192, 192);
+}
+
+/* ####################### */
+/* Über Uns */
+/* ####################### */
+#edo_ueberUns .edo_ueberUns {
+  width: 42%;
+  float: left;
+  margin: 5px 2.5% 0 5%;
+}
+
+#edo_ueberUns .edo_ueberUns:last-child {
+  width: 42%;
+  float: left;
+  margin: 50px 5% 0 0;
+}
+
+#edo_ueberUns .edo_ueberUns article {
+  width: 100%;
+  text-align: center;
+  margin: 100px auto 100px auto;
+}
+
+/* Hintergrund von ÜBER UNS*/
+#edo_ueberUns .edo_moto_bg {
+  background: url(../img/UeberUns.JPG);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#edo_ueberUns .edo_moto_bg article .edo_moto {
+  display: inline-block;
+  margin: 0 auto 0 auto;
+  width: 20%;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+  #edo_ueberUns .edo_ueberUns article p {
+    text-align: justify;
+  }
+
+  #edo_ueberUns .edo_ueberUns {
+    width: 80%;
+    float: left;
+    margin: 50px 10% 0 10%;
+  }
+
+  #edo_ueberUns .edo_ueberUns:last-child {
+    width: 80%;
+    float: left;
+    margin: 50px 10% 0 10%;
+  }
+
+  #edo_ueberUns .edo_ueberUns article {
+    margin: 20px 0 0 0;
+  }
+
+  #edo_ueberUns .edo_moto_bg article .edo_moto {
+    font-size: 27px;
+    line-height: 22px;
+    width: 70%;
+    margin: 20px 0 20px 0;
+  }
+}
+
+/* ####################### */
+/* Leistungen */
+/* ####################### */
+#edo_leistungen .edo_leistungen {
+  width: 90%;
+  margin: 50px auto 0 auto;
+}
+
+#edo_leistungen .edo_leistungen ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#edo_leistungen .edo_leistungen ul li {
+  position: relative;
+  list-style: none;
+  width: 30%;
+  margin: 0 2% 0 0;
+  float: left;
+  background-position: left bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 410px;
+}
+
+#edo_leistungen .edo_leistungen ul li:last-child {
+  margin: 0 0 0 0;
+}
+
+#edo_leistungen .edo_leistungen ul li .edo_tag_line {
+  position: absolute;
+  bottom: 25px;
+  width: 80%;
+  left: 25px;
+}
+
+#edo_leistungen .edo_leistungen ul li .edo_tag_line .edo_h3_balken {
+  margin: 0 0 10px 0;
+}
+
+#edo_leistungen .edo_leistungen ul li .edo_tag_line p {
+  margin: 0;
+  padding: 0;
+}
+
+#edo_leistungen .edo_leistungen ul li .edo_tag_line h3 {
+  text-transform: uppercase;
+  font-size: 40;
+  margin: 0 0 10px 0;
+}
+
+#edo_leistungen .edo_leistungen ul li.edo_handarbeit {
+  background: url(../img/Leistungen2.JPG);
+  background-attachment: fixed;
+}
+
+#edo_leistungen .edo_leistungen ul li.edo_projekte_naturholz {
+  background: url(../img/Leistungen2.JPG);
+  background-attachment: fixed;
+}
+
+#edo_leistungen .edo_leistungen ul li.edo_moebel_naturholz {
+  background: url(../img/Leistungen2.JPG);
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1000px) {
+  #edo_leistungen {
+    width: 100%;
+  }
+
+  #edo_leistungen .edo_leistungen ul li .edo_tag_line {
+    position: relative;
+    float: left;
+    width: 80%;
+    margin: 20% 10% 5% 0;
+  }
+
+  #edo_leistungen .edo_leistungen ul li .edo_tag_line h3 {
+    font-size: 50px;
+    line-height: 45px;
+  }
+
+  #edo_leistungen .edo_leistungen ul li .edo_tag_line p {
+    margin: 0;
+    padding: 0;
+    float: left;
+    text-align: justify;
+  }
+
+  #edo_leistungen .edo_leistungen ul li {
+    width: 80%;
+    margin: 0 10% 5% 10%;
+  }
+
+  #edo_leistungen .edo_leistungen ul li:last-child {
+    margin: 0 10% 5% 10%;
+  }
+}
+
+/* ####################### */
+/* Kontakt */
+/* ####################### */
+#edo_kontakt {
+  background: url(../img/Kontakt.JPG);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#edo_kontakt .edo_kontakt {
+  width: 100%;
+  text-align: center;
+}
+
+#edo_kontakt .edo_kontakt ul {
+  margin: 150px 0 0 0;
+  padding: 0;
+}
+
+#edo_kontakt .edo_kontakt ul li {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+}
+
+#edo_kontakt .edo_kontakt ul li a {
+  text-decoration: underline;
+}
+
+#edo_kontakt footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 110px;
+  text-align: center;
+  padding: 8px 0 0 0;
+  font-size: 11px;
+}
+
+#edo_kontakt footer .edo_logo {
+  width: 90;
+}
+
+#edo_kontakt footer .edo_logo img {
+  width: 110px;
+  height: auto;
+}
+
+#edo_kontakt footer #edo_copyright {
+  margin: -1px 0 0 0;
+  padding: 0;
+}
+
+#edo_kontakt footer #edo_meta_nav {
+  margin: 10px 0 0 0;
+}
+
+#edo_kontakt footer #edo_meta_nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+#edo_kontakt footer #edo_meta_nav ul li {
+  margin: 0;
+  padding: 0 2px 0 2px;
+  list-style: none;
+  display: inline;
+  border-right: 5px solid black;
+}
+
+#edo_kontakt footer #edo_meta_nav ul li:last-child {
+  border: none;
+}
