@@ -134,12 +134,12 @@ header {
 
 header #edo_logo {
   float: left;
-  width: 80px;
+  width: 90px;
   margin: 9px 0 0 8px;
 }
 
 header #edo_logo img {
-  width: 100%;
+  width: 300%;
   height: auto;
 }
 
@@ -204,8 +204,8 @@ header:hover {
 }
 
 header:hover>#edo_logo {
-  width: 90px;
-  margin: 15px 0 0 60px;
+  width: 100px;
+  margin: 10px 0 0 60px;
 }
 
 header:hover>#edo_kontakt_icon {
@@ -340,7 +340,7 @@ header:hover>nav ul li a {
 /* ####################### */
 #edo_leistungen .edo_leistungen {
   width: 90%;
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 #edo_leistungen .edo_leistungen ul {
@@ -481,12 +481,14 @@ header:hover>nav ul li a {
 }
 
 #edo_kontakt footer .edo_logo {
-  width: 90;
+  width: 90px;
+  text-align: center;
 }
 
 #edo_kontakt footer .edo_logo img {
-  width: 110px;
+  width: 150px;
   height: auto;
+  position: absolute;
 }
 
 #edo_kontakt footer #edo_copyright {
